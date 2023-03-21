@@ -15,9 +15,10 @@ SELECT * FROM base-datateam.base_dbo.salesman
 
 )
 
-select id, pipedriveid, email, name, location
+select id, pipedriveid, email, name, location, status
 from source_data
-
+where email <> ''
+order by id desc
 /*
     Uncomment the line below to remove records with null `id` values
 */
