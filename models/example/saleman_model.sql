@@ -14,7 +14,7 @@ with
             status,
             role,
             date_of_birth
-        from `base-datateam.db_system.user_info`
+        from base-datateam.db_system.user_info
         where metatype <> 'guest'
         order by system_id asc, user_id asc
     )
