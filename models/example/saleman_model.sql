@@ -11,13 +11,11 @@
 
 with source_data as (
 
-    select 1 as id
-    union all
-    select null as id
+SELECT * FROM base-datateam.base_dbo.salesman
 
 )
 
-select *
+select id, pipedriveid, email, name, location
 from source_data
 
 /*
